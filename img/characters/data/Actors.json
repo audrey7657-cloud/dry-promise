@@ -1,0 +1,14 @@
+[
+null,
+{"id":1,"battlerName":"SF_Actor2_6","characterIndex":1,"characterName":"주인공1","classId":1,"equips":[2,0,0,3,0],"faceIndex":0,"faceName":"안티고네","traits":[],"initialLevel":1,"maxLevel":99,"name":"안티고네","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"","characterIndex":2,"characterName":"주인공1","classId":1,"equips":[1,0,0,9,0],"faceIndex":0,"faceName":"이스메네","traits":[],"initialLevel":1,"maxLevel":99,"name":"이스메네","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"Actor1_3","characterIndex":0,"characterName":"윗마을 정원","classId":5,"equips":[31,0,65,5,0],"faceIndex":0,"faceName":"비아","traits":[],"initialLevel":1,"maxLevel":99,"name":"비아","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"Actor1_4","characterIndex":0,"characterName":"","classId":5,"equips":[31,0,0,5,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"미쉘","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"Actor1_5","characterIndex":0,"characterName":"","classId":2,"equips":[7,0,0,20,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"알버트","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"Actor1_6","characterIndex":0,"characterName":"","classId":2,"equips":[7,0,65,21,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"케이시","nickname":"","note":"","profile":""},
+{"id":7,"battlerName":"Actor1_7","characterIndex":0,"characterName":"","classId":3,"equips":[7,0,0,20,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"엘리엇","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"Actor1_8","characterIndex":0,"characterName":"","classId":3,"equips":[7,0,0,20,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"로자","nickname":"","note":"","profile":""},
+{"id":9,"battlerName":"Actor1_3","characterIndex":4,"characterName":"주인공1","classId":5,"equips":[31,0,65,5,0],"faceIndex":0,"faceName":"페메","traits":[],"initialLevel":1,"maxLevel":99,"name":"페메","nickname":"","note":"","profile":"도시 방송국의 방송인."},
+{"id":10,"battlerName":"Actor1_1","characterIndex":0,"characterName":"프롤로그 공장시민","classId":5,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"에코","nickname":"","note":"","profile":"이스메네의 어린 동생."},
+{"id":11,"battlerName":"Actor1_4","characterIndex":5,"characterName":"윗마을 정원","classId":5,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"판","nickname":"","note":"","profile":"윗마을 정원의 젊은 관리인."}
+]
