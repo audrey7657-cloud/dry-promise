@@ -28,5 +28,6 @@ var $plugins =
 {"name":"DP_EchoRoute","status":true,"description":"Dry Promise — Echo rescue redesign support (Verdict tutorial, quest text, rapid mash)","parameters":{}},
 {"name":"DP_PostRescueFlow","status":true,"description":"Dry Promise - post-rescue public hearing, Verdict Core, and ending flow.","parameters":{}},
 {"name":"dracky_slidingpuzzle","status":true,"description":"[v1.0] Sliding tile puzzle minigame","parameters":{"tileSize":"168","tileSpacing":"6","slideAnimationSpeed":"6","shuffleMoves":"60","allowExit":"true","showNumbers":"false","selectorPulse":"true","pulseSpeed":"30","pulseIntensity":"20","allowCancel":"true","movePointCost":"0","Debug":"false","seSlide":"{\"name\":\"Book1\",\"volume\":\"90\",\"pitch\":\"150\",\"pan\":\"0\"}","seInvalidMove":"{\"name\":\"Buzzer2\",\"volume\":\"60\",\"pitch\":\"100\",\"pan\":\"0\"}","seSuccess":"{\"name\":\"Decision5\",\"volume\":\"90\",\"pitch\":\"100\",\"pan\":\"0\"}","seMove":"{\"name\":\"Cursor1\",\"volume\":\"90\",\"pitch\":\"100\",\"pan\":\"0\"}"}},
-{"name":"DP_BGMOnly","status":true,"description":"메마른 약속 - BGM 전환 전용 (Verdict Core BGM/복귀)","parameters":{}}
+{"name":"DP_BGMOnly","status":true,"description":"메마른 약속 - BGM 전환 전용 (Verdict Core BGM/복귀)","parameters":{}},
+{"name":"DP_QTEGuide","status":true,"description":"QTE 시작 전 조작 설명과 영상 기반 시범·연습 연결 v1.0","parameters":{}}
 ];

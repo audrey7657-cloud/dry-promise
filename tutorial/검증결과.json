@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "lessons": [
+    {
+      "lesson": "canal",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "door",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "crossing",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "relay",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "signals",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "cartSolo",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "cartTogether",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "latch",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    },
+    {
+      "lesson": "cartInside",
+      "demo": true,
+      "correctSlow": true,
+      "wrongPenalty": true,
+      "timeout": true,
+      "retry": true,
+      "correctOriginalSpeed": true
+    }
+  ],
+  "inputLifecycle": true,
+  "clipResults": [
+    {
+      "lesson": "canal",
+      "width": 960,
+      "height": 540,
+      "duration": 4.05,
+      "rate": 1
+    },
+    {
+      "lesson": "door",
+      "width": 960,
+      "height": 540,
+      "duration": 4.616667,
+      "rate": 1
+    },
+    {
+      "lesson": "crossing",
+      "width": 960,
+      "height": 540,
+      "duration": 3.85,
+      "rate": 1
+    },
+    {
+      "lesson": "relay",
+      "width": 960,
+      "height": 540,
+      "duration": 4.85,
+      "rate": 1
+    },
+    {
+      "lesson": "signals",
+      "width": 960,
+      "height": 540,
+      "duration": 10.333333,
+      "rate": 1
+    },
+    {
+      "lesson": "cartSolo",
+      "width": 960,
+      "height": 540,
+      "duration": 4.483333,
+      "rate": 1
+    },
+    {
+      "lesson": "cartTogether",
+      "width": 960,
+      "height": 540,
+      "duration": 5.116667,
+      "rate": 1
+    },
+    {
+      "lesson": "latch",
+      "width": 960,
+      "height": 540,
+      "duration": 4.65,
+      "rate": 1
+    },
+    {
+      "lesson": "cartInside",
+      "width": 960,
+      "height": 540,
+      "duration": 4.15,
+      "rate": 1
+    }
+  ],
+  "layoutResults": [
+    {
+      "width": 1280,
+      "height": 800,
+      "scrollWidth": 1280,
+      "scrollHeight": 800,
+      "stage": {
+        "x": 164.4375,
+        "y": 183,
+        "width": 951.109375,
+        "height": 534.984375
+      },
+      "controls": [
+        {
+          "key": "up",
+          "x": 253.4375,
+          "y": 494.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "left",
+          "x": 183.4375,
+          "y": 564.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "right",
+          "x": 323.4375,
+          "y": 564.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "down",
+          "x": 253.4375,
+          "y": 634.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "ok",
+          "x": 1024.546875,
+          "y": 556.984375,
+          "w": 72,
+          "h": 72
+        },
+        {
+          "key": "cancel",
+          "x": 1034.546875,
+          "y": 490.984375,
+          "w": 52,
+          "h": 46
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "scrollHeight": 768,
+      "stage": {
+        "x": 58.671875,
+        "y": 176,
+        "width": 906.65625,
+        "height": 509.984375
+      },
+      "controls": [
+        {
+          "key": "up",
+          "x": 147.671875,
+          "y": 462.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "left",
+          "x": 77.671875,
+          "y": 532.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "right",
+          "x": 217.671875,
+          "y": 532.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "down",
+          "x": 147.671875,
+          "y": 602.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "ok",
+          "x": 874.328125,
+          "y": 524.984375,
+          "w": 72,
+          "h": 72
+        },
+        {
+          "key": "cancel",
+          "x": 884.328125,
+          "y": 458.984375,
+          "w": 52,
+          "h": 46
+        }
+      ]
+    },
+    {
+      "width": 1180,
+      "height": 820,
+      "scrollWidth": 1180,
+      "scrollHeight": 820,
+      "stage": {
+        "x": 96.671875,
+        "y": 183,
+        "width": 986.65625,
+        "height": 554.984375
+      },
+      "controls": [
+        {
+          "key": "up",
+          "x": 185.671875,
+          "y": 514.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "left",
+          "x": 115.671875,
+          "y": 584.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "right",
+          "x": 255.671875,
+          "y": 584.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "down",
+          "x": 185.671875,
+          "y": 654.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "ok",
+          "x": 992.328125,
+          "y": 576.984375,
+          "w": 72,
+          "h": 72
+        },
+        {
+          "key": "cancel",
+          "x": 1002.328125,
+          "y": 510.984375,
+          "w": 52,
+          "h": 46
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "scrollWidth": 1024,
+      "scrollHeight": 600,
+      "stage": {
+        "x": 180.4375,
+        "y": 157,
+        "width": 663.109375,
+        "height": 372.984375
+      },
+      "controls": [
+        {
+          "key": "up",
+          "x": 269.4375,
+          "y": 306.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "left",
+          "x": 199.4375,
+          "y": 376.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "right",
+          "x": 339.4375,
+          "y": 376.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "down",
+          "x": 269.4375,
+          "y": 446.984375,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "key": "ok",
+          "x": 752.546875,
+          "y": 368.984375,
+          "w": 72,
+          "h": 72
+        },
+        {
+          "key": "cancel",
+          "x": 762.546875,
+          "y": 302.984375,
+          "w": 52,
+          "h": 46
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:8000/tutorial/index.html"
+  ],
+  "additionalLifecycleChecks": {
+    "passed": true,
+    "pagehideResume": true,
+    "visibilityPause": true,
+    "lostPointerCapture": true,
+    "pinchAndScrollSuppressed": true,
+    "allNineTouchOnlyNavigation": true
+  },
+  "htmlSha256": "85960d7b9426b295ce8dce2165b85c1904abcc6357c298b1eba2b0044349bb0a",
+  "sourceCommit": "536d13ccfacae9c04c4bfcef67081d9c8870124f",
+  "testedAt": "2026-10-19",
+  "physicalTabletTested": false
+}
