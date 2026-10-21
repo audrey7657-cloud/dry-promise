@@ -1,0 +1,24 @@
+@font-face{font-family:DP-Game-Maru;src:url('../fonts/MaruBuri-Regular.ttf') format('truetype');font-display:swap}
+:root{--paper:#cab98e;--ink:#5a4635;--green:#79571e;--muted:#6d593e;--line:#a58b51}
+body{font-family:DP-Game-Maru,'Malgun Gothic',serif;background:#b8a579;color:var(--ink)}
+.topbar,.lesson-actions{background:#d3c399;border-color:#9c7c39}
+.topbar,.lesson-heading,.home-heading{font-family:inherit}
+.brand-mark{background:#79571e;border-radius:0}
+.brand,.brand-mark,.eyebrow,.phase-pill,.steps .current{color:#79571e}
+.brand-mark{color:#f2e6d0}
+.lesson-heading .instruction,.lesson-number,.muted,.step-note,.home-heading p{color:#5a4635}
+.lesson-heading h1,.home-heading h1,.center-card .big{font-weight:normal;letter-spacing:0}
+button:not(.game-key){font-family:inherit;font-weight:normal;border:0;border-radius:0;background:transparent url('help/game-row.png') center/100% 100%;color:#f2e6d0;text-shadow:0 1px 2px #0008}
+button:not(.game-key):hover,button:not(.game-key):focus-visible,button.selected:not(.game-key),button.primary:not(.game-key){background-image:url('help/game-selected.png');background-color:transparent;color:#5a4635;text-shadow:none}
+.center-card,dialog,.lesson-card{border:14px solid transparent;border-image:url('help/game-window.png') 14 fill stretch;border-radius:0;background:transparent;color:#5a4635}
+.center-card{padding:12px 18px}.center-card .big{font-size:26px}
+.lesson-card:hover{border-color:transparent;background:transparent}
+.card-copy,.card-copy p,.card-copy h2{color:#5a4635}
+.card-tag,.flow-note,.speed-switch,.steps .current{background:#ab915b33;color:#5a4635;border-radius:0}
+.speed-switch{border-color:#a58b51}
+.speed-switch button.selected{box-shadow:none}
+.stage,.video-player{border-radius:0}
+.feedback{background:#312519ed;border-color:#ba9755;border-radius:0;color:#f2e6d0}
+.game-key.pressed,.game-key.demo-pressed{outline-color:#d8b46a}
+.dialog-head h2,.lesson-card h2{font-weight:normal}
+dialog::backdrop{background:#0009}

@@ -1,0 +1,468 @@
+{
+  "passed": true,
+  "date": "2026-10-21",
+  "checks": {
+    "firstGuideAndButtons": {
+      "passed": true,
+      "checks": [
+        "After actual opening monologue and objective, before water inspection",
+        "Four themed pages, tablet bounds, close and input released",
+        "Real tablet decision button starts kitchen water interaction",
+        "Completed guide flag survives save serialization",
+        "Options and audio back buttons work even with Touch UI disabled",
+        "Puzzle real tile touch, immediate restart twice, initial board and counters restored",
+        "Puzzle can still complete; success flag and move result set once; restart removed"
+      ],
+      "texts": [
+        "후……\n혹시 지금은 조금이라도 더 나올까?",
+        "부엌 수도를 다시 확인해 보자.",
+        "[새로운 목표]\n부엌 수도를 확인하자."
+      ],
+      "errors": []
+    },
+    "saveAndChapterCompatibility": {
+      "passed": true,
+      "checks": [
+        "Chapter 2 does not show first-movement help",
+        "Old save state after monologue and before tap receives help",
+        "Help does not reopen after finishing",
+        "Options opened during play returns to play"
+      ],
+      "errors": []
+    },
+    "qteIntegration": {
+      "passed": true,
+      "cases": [
+        {
+          "map": 19,
+          "event": 12,
+          "page": 1,
+          "command": 19,
+          "lesson": "door",
+          "groupedSignal": false,
+          "passed": true
+        },
+        {
+          "map": 19,
+          "event": 22,
+          "page": 1,
+          "command": 15,
+          "lesson": "canal",
+          "groupedSignal": false,
+          "passed": true
+        }
+      ],
+      "practiceDoesNotAffectGame": true,
+      "allNineDeepLinks": true,
+      "themeChanged": true,
+      "originalWrongPenaltyAndTimeout": true,
+      "retryGuide": true,
+      "confirmationInputDoesNotLeak": true,
+      "interruptedCountdown": true,
+      "bothMashEngines": true,
+      "errors": []
+    },
+    "standalonePractice": {
+      "passed": true,
+      "lessons": [
+        {
+          "lesson": "canal",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "door",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "crossing",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "relay",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "signals",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "cartSolo",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "cartTogether",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "latch",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        },
+        {
+          "lesson": "cartInside",
+          "demo": true,
+          "correctSlow": true,
+          "wrongPenalty": true,
+          "timeout": true,
+          "retry": true,
+          "correctOriginalSpeed": true
+        }
+      ],
+      "inputLifecycle": true,
+      "clipResults": [
+        {
+          "lesson": "canal",
+          "width": 960,
+          "height": 540,
+          "duration": 4.05,
+          "rate": 1
+        },
+        {
+          "lesson": "door",
+          "width": 960,
+          "height": 540,
+          "duration": 4.616667,
+          "rate": 1
+        },
+        {
+          "lesson": "crossing",
+          "width": 960,
+          "height": 540,
+          "duration": 3.85,
+          "rate": 1
+        },
+        {
+          "lesson": "relay",
+          "width": 960,
+          "height": 540,
+          "duration": 4.85,
+          "rate": 1
+        },
+        {
+          "lesson": "signals",
+          "width": 960,
+          "height": 540,
+          "duration": 10.333333,
+          "rate": 1
+        },
+        {
+          "lesson": "cartSolo",
+          "width": 960,
+          "height": 540,
+          "duration": 4.483333,
+          "rate": 1
+        },
+        {
+          "lesson": "cartTogether",
+          "width": 960,
+          "height": 540,
+          "duration": 5.116667,
+          "rate": 1
+        },
+        {
+          "lesson": "latch",
+          "width": 960,
+          "height": 540,
+          "duration": 4.65,
+          "rate": 1
+        },
+        {
+          "lesson": "cartInside",
+          "width": 960,
+          "height": 540,
+          "duration": 4.15,
+          "rate": 1
+        }
+      ],
+      "layoutResults": [
+        {
+          "width": 1280,
+          "height": 800,
+          "scrollWidth": 1280,
+          "scrollHeight": 800,
+          "stage": {
+            "x": 164.4375,
+            "y": 182,
+            "width": 951.109375,
+            "height": 534.984375
+          },
+          "controls": [
+            {
+              "key": "up",
+              "x": 253.4375,
+              "y": 493.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "left",
+              "x": 183.4375,
+              "y": 563.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "right",
+              "x": 323.4375,
+              "y": 563.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "down",
+              "x": 253.4375,
+              "y": 633.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "ok",
+              "x": 1024.546875,
+              "y": 555.984375,
+              "w": 72,
+              "h": 72
+            },
+            {
+              "key": "cancel",
+              "x": 1034.546875,
+              "y": 489.984375,
+              "w": 52,
+              "h": 46
+            }
+          ]
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scrollWidth": 1024,
+          "scrollHeight": 768,
+          "stage": {
+            "x": 58.671875,
+            "y": 175,
+            "width": 906.65625,
+            "height": 509.984375
+          },
+          "controls": [
+            {
+              "key": "up",
+              "x": 147.671875,
+              "y": 461.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "left",
+              "x": 77.671875,
+              "y": 531.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "right",
+              "x": 217.671875,
+              "y": 531.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "down",
+              "x": 147.671875,
+              "y": 601.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "ok",
+              "x": 874.328125,
+              "y": 523.984375,
+              "w": 72,
+              "h": 72
+            },
+            {
+              "key": "cancel",
+              "x": 884.328125,
+              "y": 457.984375,
+              "w": 52,
+              "h": 46
+            }
+          ]
+        },
+        {
+          "width": 1180,
+          "height": 820,
+          "scrollWidth": 1180,
+          "scrollHeight": 820,
+          "stage": {
+            "x": 96.671875,
+            "y": 182,
+            "width": 986.65625,
+            "height": 554.984375
+          },
+          "controls": [
+            {
+              "key": "up",
+              "x": 185.671875,
+              "y": 513.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "left",
+              "x": 115.671875,
+              "y": 583.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "right",
+              "x": 255.671875,
+              "y": 583.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "down",
+              "x": 185.671875,
+              "y": 653.984375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "ok",
+              "x": 992.328125,
+              "y": 575.984375,
+              "w": 72,
+              "h": 72
+            },
+            {
+              "key": "cancel",
+              "x": 1002.328125,
+              "y": 509.984375,
+              "w": 52,
+              "h": 46
+            }
+          ]
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "scrollWidth": 1024,
+          "scrollHeight": 600,
+          "stage": {
+            "x": 180.4375,
+            "y": 156.5,
+            "width": 663.109375,
+            "height": 372.984375
+          },
+          "controls": [
+            {
+              "key": "up",
+              "x": 269.4375,
+              "y": 306.484375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "left",
+              "x": 199.4375,
+              "y": 376.484375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "right",
+              "x": 339.4375,
+              "y": 376.484375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "down",
+              "x": 269.4375,
+              "y": 446.484375,
+              "w": 64,
+              "h": 64
+            },
+            {
+              "key": "ok",
+              "x": 752.546875,
+              "y": 368.484375,
+              "w": 72,
+              "h": 72
+            },
+            {
+              "key": "cancel",
+              "x": 762.546875,
+              "y": 302.484375,
+              "w": 52,
+              "h": 46
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "requests": [
+        "http://127.0.0.1:8000/tutorial/index.html"
+      ]
+    }
+  },
+  "unchangedOriginalMenusAndArtwork": [
+    "js/plugins/MainMenuCustomization.js",
+    "js/plugins/CustomMenu.js",
+    "img/system/Window.png",
+    "img/system/IconSet.png",
+    "img/system/Balloon.png"
+  ],
+  "inputEvidence": "PC 녹화의 신호·화면 + 원본 이벤트/플러그인 설정 + Chromium 터치 실행",
+  "sourceSha256": {
+    "js/plugins.js": "fad3e110c42cb67410eb947cb9ef3c6382e8b66f1b22753cf68884ce6edb2b0b",
+    "js/plugins/DP_GameUI.js": "2191b87edf8bb0f9652c642d02b538c2888bd826b14f01176da07df20d4fbfc7",
+    "js/plugins/DP_PlayHelp.js": "6222e8c343a646358d356b77012bbab37a4c5cb992c29da6a6a23e49a26b10d7",
+    "js/plugins/DP_QTEGuide.js": "46ef3ed5c0b266ce3effb914c5ad5573421b84f9799bd30fb19cad44f481752b",
+    "js/plugins/dracky_slidingpuzzle.js": "b3691cd75030123c5e07d9a1755ec11d713c2570589f5b3ef5213f4503b4c636"
+  },
+  "limitations": [
+    "실물 태블릿 검사는 수행하지 않음",
+    "전체 이야기 처음부터 모든 엔딩까지 수동 재플레이하지 않음"
+  ],
+  "method": "첫 프롤로그 CG 부분은 완료 상태로 준비한 뒤 실제 첫 혼잣말 이벤트 실행. 퍼즐은 원래 이벤트의 플러그인 인자로 실행. QTE 판정 검사는 원본 명령을 격리 실행하고 가상 시계를 사용. 연습 HTML은 원본 장면 9개를 포함하여 오프라인 검사."
+}

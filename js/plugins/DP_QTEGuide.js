@@ -72,28 +72,29 @@
         const css=element('style');css.id='dp-qte-guide-style';
         css.textContent=`
         body.dp-qte-guide-open #dp-touch-controls{visibility:hidden!important;pointer-events:none!important}
-        #dp-qte-guide{position:fixed;inset:0;z-index:2147483600;display:grid;place-items:center;background:#0b191ce6;color:#173c39;font-family:system-ui,-apple-system,'Malgun Gothic',sans-serif;touch-action:none;user-select:none;box-sizing:border-box;padding:22px}
+        #dp-qte-guide{position:fixed;inset:0;z-index:2147483600;display:grid;place-items:center;background:#0009;color:var(--dp-ink);font-family:var(--dp-font);touch-action:none;user-select:none;box-sizing:border-box;padding:22px}
         #dp-qte-guide *{box-sizing:border-box}
         #dp-qte-guide [hidden]{display:none!important}
-        .dq-panel{width:min(880px,100%);max-height:100%;overflow:auto;background:#f5f4ed;border:2px solid #e4dabf;border-radius:22px;padding:26px 32px;box-shadow:0 20px 60px #0008;touch-action:pan-y}
-        .dq-kicker{font-size:14px;font-weight:800;color:#16664e;margin:0 0 7px}
+        .dq-panel{width:min(880px,100%);max-height:100%;overflow:auto;background-color:transparent;background-size:100% 100%;border:0;border-radius:0;padding:30px 34px;box-shadow:0 20px 60px #0008;touch-action:pan-y}
+        .dq-kicker{font-size:14px;font-weight:normal;color:#755220;margin:0 0 7px}
         .dq-title{font-size:30px;line-height:1.25;margin:0 0 12px;letter-spacing:-.04em}
-        .dq-goal{font-size:21px;font-weight:750;margin:0 0 16px}
-        .dq-signals{display:flex;gap:7px;align-items:center;padding:12px 16px;background:#e4ece0;border-radius:12px;margin:0 0 14px;flex-wrap:wrap}
+        .dq-goal{font-size:21px;font-weight:normal;margin:0 0 16px}
+        .dq-signals{display:flex;gap:7px;align-items:center;padding:12px 16px;background:#4b351823;border:1px solid #b49a5b;border-radius:0;margin:0 0 14px;flex-wrap:wrap}
         .dq-signals img{width:48px;height:48px;object-fit:contain}
         .dq-signals span{font-size:18px;font-weight:700}
         .dq-copy{font-size:21px;line-height:1.6;margin:10px 0;word-break:keep-all}
-        .dq-tip{font-size:17px;line-height:1.55;color:#49615a;margin:8px 0 12px;word-break:keep-all}
-        .dq-time{font-size:15px;line-height:1.5;border-top:1px solid #cbd7c6;padding-top:12px;color:#52655c;margin:0}
+        .dq-tip{font-size:17px;line-height:1.55;color:var(--dp-ink);margin:8px 0 12px;word-break:keep-all}
+        .dq-time{font-size:15px;line-height:1.5;border-top:1px solid #a38a51;padding-top:12px;color:var(--dp-ink);margin:0}
         .dq-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:20px;flex-wrap:wrap}
         #dp-qte-guide button{font:700 18px system-ui,sans-serif;min-height:50px;padding:10px 22px;border:1px solid #b7c7b1;border-radius:12px;background:#fff;color:#173c39;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
         #dp-qte-guide button:focus-visible{outline:4px solid #eab94b;outline-offset:3px}
-        #dp-qte-guide .dq-start{background:#16664e;color:white;border-color:#16664e}
-        .dq-ready{font-size:60px;text-align:center;font-weight:800;margin:20px 0}
+        #dp-qte-guide .dq-start{background:#16664e;color:white;border-color:#755220}
+        .dq-ready{font-size:60px;text-align:center;font-weight:normal;margin:20px 0}
         .dq-ready-note{text-align:center;font-size:21px;line-height:1.5;margin:10px 0}
-        .dq-frame{position:absolute;inset:0;border:0;width:100%;height:100%;background:#f5f4ed}
+        .dq-frame{position:absolute;inset:0;border:0;width:100%;height:100%;background:#bba879}
         #dp-qte-guide .dq-return{position:absolute;right:20px;top:5px;z-index:1;font-size:14px;min-height:44px;padding:8px 14px}
-        @media(max-height:650px){#dp-qte-guide{padding:12px}.dq-panel{padding:16px 24px}.dq-title{font-size:26px;margin-bottom:8px}.dq-goal{font-size:19px;margin-bottom:10px}.dq-copy{font-size:19px;margin:7px 0}.dq-tip{font-size:16px}.dq-signals{padding:8px 12px;margin-bottom:8px}.dq-actions{margin-top:12px}.dq-time{padding-top:8px}}
+        @media(max-height:650px){#dp-qte-guide{padding:12px}.dq-panel{padding:24px 28px}.dq-title{font-size:26px;margin-bottom:8px}.dq-goal{font-size:19px;margin-bottom:10px}.dq-copy{font-size:19px;margin:7px 0}.dq-tip{font-size:16px}.dq-signals{padding:8px 12px;margin-bottom:8px}.dq-actions{margin-top:12px}.dq-time{padding-top:8px}}
+        .dq-title{font-weight:normal}.dq-panel{filter:drop-shadow(0 8px 18px #0008)}
         `;
         document.head.append(css);
     }
@@ -107,6 +108,7 @@
         document.body.classList.add('dp-qte-guide-open');
         document.body.append(root);
         for(const event of ['pointerdown','pointerup','pointermove','pointercancel','click','touchstart','touchend','touchmove','wheel'])root.addEventListener(event,e=>e.stopPropagation());
+        active.disposeTheme=DP_GameUI.decorate(root,'.dq-panel');
         renderIntro();
     }
     function renderIntro() {
@@ -158,7 +160,7 @@
     }
     function finishGuide(a) {
         if(active!==a)return;
-        clearTimeout(a.timer);a.root.remove();document.body.classList.remove('dp-qte-guide-open');active=null;
+        clearTimeout(a.timer);a.disposeTheme();a.root.remove();document.body.classList.remove('dp-qte-guide-open');active=null;
         clearInput();
         // Do not carry the confirmation touch or keyboard trigger into the first QTE.
         if(SceneManager._scene===a.scene&&$gameTemp===a.temp)a.resume();
@@ -166,7 +168,7 @@
     }
     function discardGuide() {
         if(!active)return;
-        clearTimeout(active.timer);active.root.remove();active=null;
+        clearTimeout(active.timer);active.disposeTheme();active.root.remove();active=null;
         document.body.classList.remove('dp-qte-guide-open');clearInput();
     }
     const executeCommand=Game_Interpreter.prototype.executeCommand;

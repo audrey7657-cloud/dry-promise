@@ -29,7 +29,9 @@ var $plugins =
 {"name":"DP_PostRescueFlow","status":true,"description":"Dry Promise - post-rescue public hearing, Verdict Core, and ending flow.","parameters":{}},
 {"name":"dracky_slidingpuzzle","status":true,"description":"[v1.0] Sliding tile puzzle minigame","parameters":{"tileSize":"168","tileSpacing":"6","slideAnimationSpeed":"6","shuffleMoves":"60","allowExit":"true","showNumbers":"false","selectorPulse":"true","pulseSpeed":"30","pulseIntensity":"20","allowCancel":"true","movePointCost":"0","Debug":"false","seSlide":"{\"name\":\"Book1\",\"volume\":\"90\",\"pitch\":\"150\",\"pan\":\"0\"}","seInvalidMove":"{\"name\":\"Buzzer2\",\"volume\":\"60\",\"pitch\":\"100\",\"pan\":\"0\"}","seSuccess":"{\"name\":\"Decision5\",\"volume\":\"90\",\"pitch\":\"100\",\"pan\":\"0\"}","seMove":"{\"name\":\"Cursor1\",\"volume\":\"90\",\"pitch\":\"100\",\"pan\":\"0\"}"}},
 {"name":"DP_BGMOnly","status":true,"description":"메마른 약속 - BGM 전환 전용 (Verdict Core BGM/복귀)","parameters":{}},
+{"name":"DP_GameUI","status":true,"description":"기존 창 스킨을 사용하는 안내 테마","parameters":{}},
 {"name":"DP_QTEGuide","status":true,"description":"QTE 시작 전 조작 설명과 영상 기반 시범·연습 연결 v1.0","parameters":{}},
 {"name":"DP_GameDefaults","status":true,"description":"대시 제거 · 새 게임 미니맵 ON","parameters":{}},
-{"name":"DP_Chapters","status":true,"description":"1부·2부 시작과 선택 기록 이어받기","parameters":{}}
+{"name":"DP_Chapters","status":true,"description":"1부·2부 시작과 선택 기록 이어받기","parameters":{}},
+{"name":"DP_PlayHelp","status":true,"description":"첫 조작 안내·퍼즐 재시작·옵션 뒤로가기","parameters":{}}
 ];

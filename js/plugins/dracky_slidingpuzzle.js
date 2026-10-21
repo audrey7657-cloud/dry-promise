@@ -712,6 +712,25 @@
         this.updateTilePositions(false);
         
         if (debugMode) console.log('Puzzle shuffled. Current state:', this._tiles);
+        this._dpInitialTiles = this._tiles.slice();
+    };
+
+    Scene_SlidingPuzzle.prototype.restartPuzzle = function() {
+        if (this._gameOver || !this._dpInitialTiles) return;
+        clearTimeout(this._slideCheckTimer);
+        this._tiles = this._dpInitialTiles.slice();
+        this._moveCount = 0;
+        this._score = 1000;
+        this._isAnimating = false;
+        this._animatingTile = null;
+        this._animationFrame = 0;
+        this._selectedRow = 0;
+        this._selectedCol = 0;
+        this.updateTilePositions(false);
+        this.updateSelectorPosition();
+        this.updateInfoWindow();
+        Input.clear(); TouchInput.clear();
+        SoundManager.playOk();
     };
     
     Scene_SlidingPuzzle.prototype.getAdjacentTiles = function(index) {
@@ -739,7 +758,7 @@
             var targetX = this._gridOffsetX + col * (this._calculatedTileSize + tileSpacing);
             var targetY = this._gridOffsetY + row * (this._calculatedTileSize + tileSpacing);
             
-            if (animate && sprite.x !== targetX || sprite.y !== targetY) {
+            if (animate && (sprite.x !== targetX || sprite.y !== targetY)) {
                 sprite.targetX = targetX;
                 sprite.targetY = targetY;
                 sprite.isSliding = true;
@@ -914,7 +933,9 @@
         
         // Check win condition after animation completes
         var self = this;
-        setTimeout(function() {
+        clearTimeout(this._slideCheckTimer);
+        this._slideCheckTimer = setTimeout(function() {
+            if (SceneManager._scene !== self || self._gameOver) return;
             if (self.checkWin()) {
                 self.onGameOver(true);
             } else if (self._maxMoves > 0 && self._moveCount >= self._maxMoves) {
@@ -994,6 +1015,7 @@
     };
     
     Scene_SlidingPuzzle.prototype.terminate = function() {
+        clearTimeout(this._slideCheckTimer);
         Scene_MenuBase.prototype.terminate.call(this);
         
         $gameTemp._slidingPuzzleGridSize = null;
