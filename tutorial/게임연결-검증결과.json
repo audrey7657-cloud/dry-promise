@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "date": "2026-10-20",
+  "timezone": "Asia/Seoul",
+  "method": "Chromium 터치 이벤트와 브라우저 가상 시계. 실제 원작 명령을 격리해 실행. 안내 중 배경 캔버스 렌더링 빈도는 시험에서 제한.",
+  "verificationRuns": [
+    "원작 QTE 시작 명령 24개·9개 연습 연결·실패/재시도·확인 입력 해제",
+    "수레 연타 API 2개",
+    "독립 HTML 회귀"
+  ],
+  "qteCases": [
+    {
+      "map": 15,
+      "event": 20,
+      "page": 2,
+      "command": 11,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 20,
+      "page": 2,
+      "command": 25,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 20,
+      "page": 2,
+      "command": 39,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 31,
+      "page": 1,
+      "command": 18,
+      "tutorial": "signals",
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 31,
+      "page": 1,
+      "command": 31,
+      "tutorial": "signals",
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 31,
+      "page": 1,
+      "command": 44,
+      "tutorial": "signals",
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 31,
+      "page": 1,
+      "command": 57,
+      "tutorial": "signals",
+      "passed": true
+    },
+    {
+      "map": 15,
+      "event": 31,
+      "page": 1,
+      "command": 70,
+      "tutorial": "signals",
+      "passed": true
+    },
+    {
+      "map": 18,
+      "event": 13,
+      "page": 4,
+      "command": 8,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 19,
+      "event": 12,
+      "page": 1,
+      "command": 19,
+      "tutorial": "door",
+      "passed": true
+    },
+    {
+      "map": 19,
+      "event": 22,
+      "page": 1,
+      "command": 15,
+      "tutorial": "canal",
+      "passed": true
+    },
+    {
+      "map": 21,
+      "event": 5,
+      "page": 4,
+      "command": 6,
+      "tutorial": "relay",
+      "passed": true
+    },
+    {
+      "map": 21,
+      "event": 9,
+      "page": 2,
+      "command": 5,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 21,
+      "event": 10,
+      "page": 2,
+      "command": 5,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 21,
+      "event": 11,
+      "page": 2,
+      "command": 5,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 22,
+      "event": 5,
+      "page": 2,
+      "command": 3,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 22,
+      "event": 6,
+      "page": 2,
+      "command": 3,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 22,
+      "event": 7,
+      "page": 2,
+      "command": 3,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 30,
+      "event": 14,
+      "page": 1,
+      "command": 7,
+      "tutorial": "crossing",
+      "passed": true
+    },
+    {
+      "map": 32,
+      "event": 4,
+      "page": 2,
+      "command": 16,
+      "tutorial": null,
+      "passed": true
+    },
+    {
+      "map": 32,
+      "event": 4,
+      "page": 2,
+      "command": 37,
+      "tutorial": "cartSolo",
+      "passed": true
+    },
+    {
+      "map": 32,
+      "event": 4,
+      "page": 5,
+      "command": 8,
+      "tutorial": "cartTogether",
+      "passed": true
+    },
+    {
+      "map": 32,
+      "event": 8,
+      "page": 1,
+      "command": 24,
+      "tutorial": "cartInside",
+      "passed": true
+    },
+    {
+      "map": 34,
+      "event": 1,
+      "page": 1,
+      "command": 11,
+      "tutorial": "latch",
+      "passed": true
+    }
+  ],
+  "practiceDoesNotAffectGame": true,
+  "allNineDeepLinksAndReturn": true,
+  "originalWrongPenaltyAndTimeout": true,
+  "retryGuide": true,
+  "confirmationInputDoesNotLeak": true,
+  "interruptedCountdown": true,
+  "mash": {
+    "passed": true,
+    "bothMashEngines": true,
+    "initialGoal12": true,
+    "retryGoal8": true,
+    "guideDoesNotArmTimer": true,
+    "errors": []
+  },
+  "standalone": {
+    "passed": true,
+    "offline": true,
+    "allNineCards": true,
+    "homeNavigation": true,
+    "practiceSuccess": true,
+    "lastLessonReturnsHome": true,
+    "errors": []
+  },
+  "physicalTabletTested": false,
+  "files": {
+    "js/plugins.js": "08d545da1c3dcf62d2f87ee43f09ce540cbe486f60dde43c0ae4e83f8a9b01a0",
+    "js/plugins/DP_QTEGuide.js": "a5e62246d1e895f57f468279f3e2d5779a8761576d21b1dd2c62a176b6568b45",
+    "tutorial/index.html": "38dd52dfcc0629cc76322752c9f110a8f0965a6d580d4c5b24f9f19af6526949"
+  }
+}

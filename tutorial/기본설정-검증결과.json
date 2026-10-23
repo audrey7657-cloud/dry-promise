@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "기존 항상 대시 ON 설정을 불러와도 비활성화",
+      "passed": true,
+      "evidence": {
+        "dash": false,
+        "minimap": false,
+        "savedDash": false
+      }
+    },
+    {
+      "name": "기존 미니맵 OFF 설정에서도 새 게임은 ON·펼침",
+      "passed": true,
+      "evidence": {
+        "minimap": true,
+        "show": true,
+        "expanded": true
+      }
+    },
+    {
+      "name": "실제 프롤로그 CG 동안 미니맵·이름표 숨김",
+      "passed": true,
+      "evidence": {
+        "option": true,
+        "expanded": true,
+        "suppressed": true,
+        "visible": false,
+        "sprite": false,
+        "tab": false
+      }
+    },
+    {
+      "name": "원본 프롤로그 종료 후 실제 플레이 미니맵 ON",
+      "passed": true,
+      "evidence": {
+        "option": true,
+        "expanded": true,
+        "suppressed": false,
+        "visible": true,
+        "sprite": true,
+        "tab": true
+      }
+    },
+    {
+      "name": "CG가 겹쳐도 마지막 CG가 닫힌 뒤 미니맵 복귀",
+      "passed": true,
+      "evidence": {
+        "option": true,
+        "expanded": true,
+        "suppressed": false,
+        "visible": true,
+        "sprite": true,
+        "tab": true
+      }
+    },
+    {
+      "name": "수동으로 접은 미니맵은 CG 종료 뒤에도 접힘 유지",
+      "passed": true,
+      "evidence": {
+        "option": true,
+        "expanded": false,
+        "suppressed": false,
+        "visible": false,
+        "sprite": false,
+        "tab": true
+      }
+    },
+    {
+      "name": "일반 대화에서 미니맵 표시 유지",
+      "passed": true
+    },
+    {
+      "name": "저장 불러오기에서 미니맵 선택 유지·남은 대시 상태 무효화",
+      "passed": true,
+      "evidence": {
+        "option": false,
+        "show": false,
+        "expanded": false,
+        "dashing": false,
+        "speed": 4.5,
+        "base": 4.5
+      }
+    },
+    {
+      "name": "Shift와 방향키·기존 항상 대시 ON 설정에서도 걷기 속도",
+      "passed": true,
+      "evidence": {
+        "x": 10,
+        "frames": 20
+      }
+    },
+    {
+      "name": "터치 목적지가 설정되어도 대시 가속 없음",
+      "passed": true,
+      "evidence": {
+        "frames": 15
+      }
+    },
+    {
+      "name": "실제 화면 방향키 터치 이동도 걷기",
+      "passed": true,
+      "evidence": {
+        "frames": 18
+      }
+    },
+    {
+      "name": "이벤트에서 지정한 이동 속도 유지",
+      "passed": true,
+      "evidence": {
+        "slow": 3,
+        "fast": 5
+      }
+    },
+    {
+      "name": "옵션에서 항상 대쉬 항목 제거·미니맵 항목 유지",
+      "passed": true,
+      "evidence": [
+        "touchUI",
+        "showMinimap",
+        "audioSubmenu"
+      ]
+    },
+    {
+      "name": "옵션에서 돌아와도 미니맵 ON 유지",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "sourceHashes": {
+    "js/plugins.js": "408c58ad893112deeea6475367bb1038ba03a2e58c18e360c06bc90c2a598f8b",
+    "js/plugins/DP_GameDefaults.js": "0f8418ae30153ed64ab784ddfa5b919a6288d59077e85d54cad2da5144a313a2",
+    "data/Map001.json": "193dac8af67bf60ab83fe894cde481fe22769bccd5111b994ba47856979537df"
+  },
+  "environment": "Chromium / Playwright, 1200×800, touch-enabled emulation"
+}

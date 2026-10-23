@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "date": "2026-10-21",
+  "scope": "기존 메뉴 디자인 복원 및 새 게임 안의 부 선택창에 원래 Window 스킨·게임 글꼴 적용",
+  "ui": {
+    "passed": true,
+    "originalTitle": [
+      {
+        "name": "새 게임",
+        "command": "newGame",
+        "image": "newgame.default",
+        "hover": "newgame",
+        "x": 700,
+        "y": 510,
+        "visible": true
+      },
+      {
+        "name": "이어하기",
+        "command": "loadGame",
+        "image": "continue.default",
+        "hover": "continue.hover",
+        "x": 700,
+        "y": 590,
+        "visible": true
+      },
+      {
+        "name": "옵션",
+        "command": "options",
+        "image": "option.default",
+        "hover": "option",
+        "x": 700,
+        "y": 670,
+        "visible": true
+      }
+    ],
+    "theme": {
+      "font": "rmmz-mainfont, \"Malgun Gothic\", \"Apple SD Gothic Neo\", sans-serif",
+      "color": "rgb(90, 70, 53)",
+      "usesOriginalWindowSkin": true
+    },
+    "originalOptions": true,
+    "originalLoad": true,
+    "originalSave": true,
+    "part2": true,
+    "errors": []
+  },
+  "checkpointAndLayout": {
+    "passed": true,
+    "checks": [
+      "chapters fits tablet landscape sizes",
+      "question fits tablet landscape sizes",
+      "Original New Game → chapter 1",
+      "completion fits tablet landscape sizes",
+      "Original chase ending → themed completion and checkpoint",
+      "saved recap fits tablet landscape sizes",
+      "Reload → original New Game → chapter 2 restores actual saved state"
+    ],
+    "saved": {
+      "take": true,
+      "index": 163,
+      "variable": 73,
+      "gold": 19
+    },
+    "errors": []
+  },
+  "originalFilesUnchanged": [
+    "js/plugins/MainMenuCustomization.js",
+    "js/plugins/CustomMenu.js",
+    "img/system/Window.png",
+    "img/pictures/newgame.default.png",
+    "img/pictures/newgame.png",
+    "img/pictures/continue.default.png",
+    "img/pictures/continue.hover.png",
+    "img/pictures/option.default.png",
+    "img/pictures/option.png"
+  ],
+  "sourceSha256": "e8cc88a60c0d74374d4396864ab12c60d59708c644f5dc6e6733177a22af60f9",
+  "method": "Chromium 터치 에뮬레이션. 원래 제목 화면 버튼을 실제 터치로 검사. 완료 기록 검사는 원본 추격전 종료 분기부터 대화를 자동으로 넘겨 실행.",
+  "limitations": [
+    "실물 태블릿 검사 미수행",
+    "전체 이야기부터 모든 엔딩까지 재플레이하지 않음"
+  ],
+  "previousReport": "1부-2부-검증결과.json은 디자인 복원 전의 부 분할 기능 검사 기록"
+}

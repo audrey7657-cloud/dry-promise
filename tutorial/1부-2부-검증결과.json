@@ -1,0 +1,366 @@
+{
+  "passed": true,
+  "verificationDate": "2026-10-21",
+  "environment": "Chromium / Playwright, touch-enabled tablet emulation and desktop mouse",
+  "functional": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "태블릿 첫 화면: 1부·2부·저장 이어하기·설정",
+        "passed": true
+      },
+      {
+        "name": "기록 없이 사본 가져감 선택 → 실제 방송국 도입·목표",
+        "passed": true,
+        "evidence": {
+          "party": [
+            9
+          ],
+          "chapter": 2,
+          "choice": [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false
+          ],
+          "future": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "intro": true,
+          "quest": "S01_08P2",
+          "move": true,
+          "dash": false,
+          "minimap": true,
+          "speed": 4.5,
+          "bgm": "Pheme Investigation",
+          "items": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "질문 시작 후 편집장·방송국 출구·윗마을 주민 4명 취재 진행",
+        "passed": true,
+        "evidence": {
+          "a": true,
+          "b": true,
+          "done": true,
+          "count": 4,
+          "quest": "S01_08P4"
+        }
+      },
+      {
+        "name": "중앙광장·아랫마을·안티고네 집 재방문에서 1부 재실행 없음",
+        "passed": true
+      },
+      {
+        "name": "기록 없이 사본 제자리 선택 → 실제 방송국 도입·목표",
+        "passed": true,
+        "evidence": {
+          "party": [
+            9
+          ],
+          "chapter": 2,
+          "choice": [
+            false,
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "future": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "intro": true,
+          "quest": "S01_08P2",
+          "move": true,
+          "dash": false,
+          "minimap": true,
+          "speed": 4.5,
+          "bgm": "Pheme Investigation",
+          "items": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "name": "저장 실패를 표시하고 다시 저장 성공 전 종료 버튼을 숨김",
+        "passed": true
+      },
+      {
+        "name": "실제 추격 종료 분기·정리 뒤 완료 기록 저장 및 제목 복귀",
+        "passed": true,
+        "evidence": {
+          "time": 1792559005237,
+          "take": true,
+          "index": 163,
+          "variable": 73,
+          "name": "기록 확인",
+          "gold": 19
+        }
+      },
+      {
+        "name": "브라우저 새로고침 후 1부 실제 선택·변수·아이템 상태 복원",
+        "passed": true
+      },
+      {
+        "name": "2부 일반 저장·불러오기 정상, 1부 완료 원본 유지",
+        "passed": true
+      },
+      {
+        "name": "다른 선택으로 새 2부 시작해도 기존 완료 기록 보존",
+        "passed": true
+      },
+      {
+        "name": "사본 제자리의 실제 1부 종료 → 2부 바로 시작, 비아 협력 유지",
+        "passed": true
+      },
+      {
+        "name": "설정 왕복과 대시 제거·미니맵 설정 유지",
+        "passed": true
+      },
+      {
+        "name": "손상된 완료 기록은 사본 선택 질문으로 복구",
+        "passed": true
+      },
+      {
+        "name": "태블릿 가로 화면 1200×800·1024×600·800×600에서 메뉴 표시",
+        "passed": true
+      }
+    ],
+    "errors": []
+  },
+  "branchCommands": {
+    "passed": true,
+    "method": "Original event state and branch commands; dialogue, movement and transfer skipped",
+    "results": [
+      {
+        "take": true,
+        "answer": 0,
+        "switches": {
+          "216": true,
+          "217": false,
+          "218": false,
+          "220": false,
+          "221": true,
+          "222": false,
+          "223": true,
+          "224": false,
+          "225": true
+        }
+      },
+      {
+        "take": true,
+        "answer": 1,
+        "switches": {
+          "216": true,
+          "217": false,
+          "218": false,
+          "220": true,
+          "221": false,
+          "222": true,
+          "223": false,
+          "224": false,
+          "225": true
+        }
+      },
+      {
+        "take": false,
+        "answer": 0,
+        "switches": {
+          "216": false,
+          "217": true,
+          "218": true,
+          "220": false,
+          "221": true,
+          "222": false,
+          "223": true,
+          "224": true,
+          "225": false
+        }
+      },
+      {
+        "take": false,
+        "answer": 1,
+        "switches": {
+          "216": false,
+          "217": true,
+          "218": true,
+          "220": true,
+          "221": false,
+          "222": true,
+          "223": false,
+          "224": true,
+          "225": false
+        }
+      }
+    ],
+    "errors": []
+  },
+  "layout": {
+    "passed": true,
+    "rows": [
+      {
+        "size": {
+          "width": 1024,
+          "height": 600
+        },
+        "kind": "title",
+        "rect": {
+          "x": 542.203125,
+          "y": 149.8125,
+          "width": 380,
+          "height": 402.234375
+        },
+        "vw": 981,
+        "vh": 575,
+        "visual": {
+          "width": 980.0000610351562,
+          "height": 574.2188110351562,
+          "scale": 1.0448979139328003
+        }
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 600
+        },
+        "kind": "question",
+        "rect": {
+          "x": 170.5,
+          "y": 91.71875,
+          "width": 640,
+          "height": 391.5625
+        },
+        "vw": 981,
+        "vh": 575,
+        "visual": {
+          "width": 980.0000610351562,
+          "height": 574.2188110351562,
+          "scale": 1.0448979139328003
+        }
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 600
+        },
+        "kind": "recap",
+        "rect": {
+          "x": 170.5,
+          "y": 75.9375,
+          "width": 640,
+          "height": 423.125
+        },
+        "vw": 981,
+        "vh": 575,
+        "visual": {
+          "width": 980.0000610351562,
+          "height": 574.2188110351562,
+          "scale": 1.0448979139328003
+        }
+      },
+      {
+        "size": {
+          "width": 800,
+          "height": 600
+        },
+        "kind": "title",
+        "rect": {
+          "x": 541.203125,
+          "y": 303.375,
+          "width": 380,
+          "height": 402.234375
+        },
+        "vw": 980,
+        "vh": 735,
+        "visual": {
+          "width": 979.9999389648438,
+          "height": 734.9999389648438,
+          "scale": 0.8163265585899353
+        }
+      },
+      {
+        "size": {
+          "width": 800,
+          "height": 600
+        },
+        "kind": "question",
+        "rect": {
+          "x": 170,
+          "y": 171.71875,
+          "width": 640,
+          "height": 391.5625
+        },
+        "vw": 980,
+        "vh": 735,
+        "visual": {
+          "width": 979.9999389648438,
+          "height": 734.9999389648438,
+          "scale": 0.8163265585899353
+        }
+      },
+      {
+        "size": {
+          "width": 800,
+          "height": 600
+        },
+        "kind": "recap",
+        "rect": {
+          "x": 170,
+          "y": 155.9375,
+          "width": 640,
+          "height": 423.125
+        },
+        "vw": 980,
+        "vh": 735,
+        "visual": {
+          "width": 979.9999389648438,
+          "height": 734.9999389648438,
+          "scale": 0.8163265585899353
+        }
+      }
+    ]
+  },
+  "mouse": {
+    "passed": true,
+    "originalHiddenTitleDoesNotReceiveClick": true,
+    "part2Starts": true,
+    "errors": []
+  },
+  "limitations": [
+    "Full manual playthrough of every ending was not performed.",
+    "Physical tablet hardware was not tested.",
+    "Long dialogue was advanced automatically; first-part ending was exercised from the original chase-resolution branch."
+  ],
+  "sourceHashes": {
+    "js/plugins/DP_Chapters.js": "6ddcdc9218cad66546f63d9d77cf3638920ab63620e5ac1045bf9736fbd8de92",
+    "js/plugins.js": "ce9d086d56b3bfb1f9b38146e04b38844cec93d30a3756760d4dacf74f4842af",
+    "data/Map030.json": "b78ecfc419afbe7129a7195b45bb40c0838cc288398ccc8b40bbf337270cfcb0",
+    "data/Map020.json": "e1488812e6dbf6e3b41d1e9144d46d08391c4e29398d0e515315b8dada883c0e",
+    "data/Map002.json": "1908ad3ba5843c6f0e2070ec2513fc070a0cec18a9bc28a9b4a27d680eda65f1"
+  }
+}
